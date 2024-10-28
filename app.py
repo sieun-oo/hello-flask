@@ -23,4 +23,4 @@ def method():
         return f"POST로 전달된 당신이 입력한 검색어: {keyword}"
 
 if __name__ == '__main__':
-    app.run()
+    app.run( )
