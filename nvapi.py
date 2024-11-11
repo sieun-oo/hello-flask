@@ -3,7 +3,7 @@ import os
 import sys
 import urllib.request
 
-#오류 발생 추가 소스
+# 오류 발생 추가 소스
 import ssl 
 
 def blog(keyword):
