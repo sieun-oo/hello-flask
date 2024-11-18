@@ -21,5 +21,11 @@ def blog(keyword):
     if(rescode==200):
         response_body = response.read()
         print(response_body.decode('utf-8'))
+        res = response_body.decode('utf8')
+        print(type(res)) # 자료형(data type)을 확인
+        dic_res = json.loads(res) # json 문자열을 파이썬에 딕셔너리 자료형으로 변경
+        print(type(dic_res)) # 자료형(data type)을 확인
+        print(dic_res['items'])
+
     else:
         print("Error Code:" + rescode)
